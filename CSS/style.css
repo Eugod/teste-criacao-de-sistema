@@ -1,0 +1,82 @@
+:root {
+    --cor-primaria: #78C1F3;
+    --cor-secundaria: #E2F6CA;
+    --cor-terciaria: #F8FDCF;
+    --cor-quaternaria: #9BE8D8;
+}
+
+.body-login, .body-home {
+    height: 100vh;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    background: linear-gradient(-45deg, var(--cor-secundaria), var(--cor-primaria));
+}
+
+/* -------------------- css login -------------------- */
+.body-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--cor-primaria);
+    border-radius: 5px;
+    padding: 50px 0px;
+    height: 30%;
+    width: 700px;
+    margin-bottom: 5%;
+}
+
+.div-login {
+    text-align: center;
+    width: 100%;
+}
+
+.div-login label {
+    font-size: 1.5rem;
+}
+
+.div-login input {
+    background-color: var(--cor-terciaria);
+    border-width: 0.1px;
+}
+
+#senha {
+    margin-left: 16px;
+}
+
+.btn-login {
+    background-color: var(--cor-quaternaria);
+    border-width: 0;
+    box-shadow: 3px 3px 5px #000000;
+    font-size: 1.2rem;
+    padding: 5px 25px;
+    border-radius: 2px;
+    transition: 0.1s all;
+}
+
+.btn-login:active {
+    transform: scale(0.98);
+    background-color: #87c9bc;
+}
+
+/* -------------------- media querry login -------------------- */
+@media(max-width: 768px) {
+    .main-login {
+        width: 260px;
+    }
+
+    #senha {
+        margin-left: 0px;
+        margin-bottom: 15px;
+    }
+}
+
+/* -------------------- css home -------------------- */
