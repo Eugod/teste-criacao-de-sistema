@@ -5,7 +5,12 @@
     --cor-quaternaria: #9BE8D8;
 }
 
-.body-login, .body-home, .body-clientes, .body-estoque, .body-contas-a-pagar, .body-estatisticas {
+.body-login,
+.body-home,
+.body-clientes,
+.body-estoque,
+.body-contas-a-pagar,
+.body-estatisticas {
     height: 100vh;
     width: 100%;
     padding: 0px;
@@ -80,11 +85,19 @@
 }
 
 /* -------------------- css header -------------------- */
-.body-home, .body-clientes, .body-estoque, .body-contas-a-pagar, .body-estatisticas {
+.body-home,
+.body-clientes,
+.body-estoque,
+.body-contas-a-pagar,
+.body-estatisticas {
     display: flex;
 }
 
-.body-home header, .body-clientes header, .body-estoque header, .body-contas-a-pagar header, .body-estatisticas header {
+.body-home header,
+.body-clientes header,
+.body-estoque header,
+.body-contas-a-pagar header,
+.body-estatisticas header {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -101,7 +114,7 @@
 }
 
 .div-inicio-header {
-    height: 90%;
+    height: 70%;
     margin-top: 30px;
 }
 
@@ -110,7 +123,11 @@
     padding: 0px 5px;
 }
 
-#vendas-li, #clientes-li, #estoque-li, #contas-a-pagar-li, #estatisticas-li {
+#vendas-li,
+#clientes-li,
+#estoque-li,
+#contas-a-pagar-li,
+#estatisticas-li {
     border-bottom: 1px solid;
 }
 
@@ -125,7 +142,11 @@
     margin-right: 5px;
 }
 
-#vendas-a, #clientes-a, #estoque-a, #contas-a-pagar-a, #estatisticas-a {
+#vendas-a,
+#clientes-a,
+#estoque-a,
+#contas-a-pagar-a,
+#estatisticas-a {
     color: #000000;
 }
 
@@ -133,6 +154,25 @@
     text-decoration: none;
     color: #3d3c3c;
     font-size: 1.2rem;
+}
+
+.div-meio-header {
+    margin-bottom: 50px;
+}
+
+.btn-sair {
+    background-color: var(--cor-quaternaria);
+    border-width: 0;
+    box-shadow: 3px 3px 5px #000000;
+    font-size: 1.2rem;
+    padding: 0px 20px;
+    border-radius: 2px;
+    transition: 0.1s all;
+}
+
+.btn-sair:active {
+    transform: scale(0.98);
+    background-color: #87c9bc;
 }
 
 .div-final-header {
@@ -159,3 +199,7 @@
 }
 
 /* -------------------- css home -------------------- */
+.main-home {
+    width: 93%;
+    background-color: red;
+}
