@@ -68,7 +68,7 @@ async function fazerLogin() {
 
         localStorage.setItem('loginRealizado', JSON.stringify(loginRealizado));
 
-        window.location.href = './home.html';
+        window.location.replace('./home.html');
 
         limparInputs(inputs);
     } else {

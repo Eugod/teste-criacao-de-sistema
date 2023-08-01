@@ -5,7 +5,7 @@
     --cor-quaternaria: #9BE8D8;
 }
 
-.body-login, .body-home {
+.body-login, .body-home, .body-clientes, .body-estoque, .body-contas-a-pagar, .body-estatisticas {
     height: 100vh;
     width: 100%;
     padding: 0px;
@@ -77,6 +77,85 @@
         margin-left: 0px;
         margin-bottom: 15px;
     }
+}
+
+/* -------------------- css header -------------------- */
+.body-home, .body-clientes, .body-estoque, .body-contas-a-pagar, .body-estatisticas {
+    display: flex;
+}
+
+.body-home header, .body-clientes header, .body-estoque header, .body-contas-a-pagar header, .body-estatisticas header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0884d6;
+    height: 100vh;
+    width: 200px;
+    border-right-width: 1.5px;
+    border-right-color: #5f5f5f;
+    border-right-style: solid;
+}
+
+.logo-header {
+    width: 100px;
+}
+
+.div-inicio-header {
+    height: 90%;
+    margin-top: 30px;
+}
+
+.div-inicio-header ul {
+    list-style-type: none;
+    padding: 0px 5px;
+}
+
+#vendas-li, #clientes-li, #estoque-li, #contas-a-pagar-li, #estatisticas-li {
+    border-bottom: 1px solid;
+}
+
+.div-inicio-header ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.icones-menu {
+    width: 35px;
+    margin-right: 5px;
+}
+
+#vendas-a, #clientes-a, #estoque-a, #contas-a-pagar-a, #estatisticas-a {
+    color: #000000;
+}
+
+.div-inicio-header ul li a {
+    text-decoration: none;
+    color: #3d3c3c;
+    font-size: 1.2rem;
+}
+
+.div-final-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.incial-do-nome {
+    background-color: var(--cor-quaternaria);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.nome-do-usuario {
+    font-size: 1.2rem;
+    margin-left: 5px;
+    font-weight: bold;
 }
 
 /* -------------------- css home -------------------- */
