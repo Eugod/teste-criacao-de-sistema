@@ -151,6 +151,8 @@
 }
 
 .div-inicio-header ul li a {
+    display: flex;
+    align-items: center;
     text-decoration: none;
     color: #3d3c3c;
     font-size: 1.2rem;
@@ -198,8 +200,61 @@
     font-weight: bold;
 }
 
-/* -------------------- css home -------------------- */
+/* -------------------- css vendas -------------------- */
 .main-home {
-    width: 93%;
-    background-color: red;
+    width: calc(100vw - 220px);
+    margin-left: 20px;
+}
+
+.cabecalho-vendas, .sub-cabecalho-vendas {
+    list-style: none;
+    padding: 0px;
+}
+
+.cabecalho-vendas li a, .sub-cabecalho-vendas li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.cabecalho-vendas {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.cabecalho-vendas li {
+    margin-right: 100px;
+}
+
+#impressora-li {
+    border-left: 2px solid #5f5f5f;
+    padding-left: 30px;
+}
+
+#impressora-li button {
+    background-color: #ffffff00;
+    border: 0;
+}
+
+.cabecalho-vendas li a {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.icones-vendas {
+    width: 35px;
+}
+
+.sub-cabecalho-vendas {
+    display: flex;
+    align-items: center;
+}
+
+.sub-cabecalho-vendas li {
+    margin-right: 30px;
+}
+
+#ultimas-vendas, #pedidos-em-aberto, #orcamentos {
+    text-decoration: underline;
 }

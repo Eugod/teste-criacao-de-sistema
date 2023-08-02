@@ -6,6 +6,6 @@ btnSair.addEventListener('click', () => {
     console.log(confirmacaoSaida);
 
     if (confirmacaoSaida) {
-        window.location.replace('./index.html');
+        window.location.replace('../index.html');
     }
 });
