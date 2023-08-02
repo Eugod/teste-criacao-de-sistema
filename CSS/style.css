@@ -84,7 +84,7 @@
     }
 }
 
-/* -------------------- css header -------------------- */
+/* -------------------- css header lateral -------------------- */
 .body-home,
 .body-clientes,
 .body-estoque,
@@ -204,14 +204,18 @@
 .main-home {
     width: calc(100vw - 220px);
     margin-left: 20px;
+    padding-right: 20px;
 }
 
-.cabecalho-vendas, .sub-cabecalho-vendas {
+/* -------------------- css vendas cabeçalho -------------------- */
+.cabecalho-vendas,
+.sub-cabecalho-vendas {
     list-style: none;
     padding: 0px;
 }
 
-.cabecalho-vendas li a, .sub-cabecalho-vendas li a {
+.cabecalho-vendas li a,
+.sub-cabecalho-vendas li a {
     text-decoration: none;
     color: #000000;
 }
@@ -255,14 +259,86 @@
     margin-right: 30px;
 }
 
-#ultimas-vendas, #pedidos-em-aberto, #orcamentos {
+#ultimas-vendas,
+#pedidos-em-aberto,
+#orcamentos {
     text-decoration: underline;
 }
 
-.main-home section div ul li button {
-    background-color: #ffffff00;
-    border: 0px;
+/* -------------------- css vendas corpo da tela (tabelas e informações) -------------------- */
+.secao-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-secao-home {
+    width: 100%;
+}
+
+.div-secao-home ul {
+    list-style-type: none;
     margin: 0px;
     padding: 0px;
-    text-align: left;
+}
+
+.div-secao-home ul li {
+    display: flex;
+    align-items: center;
+}
+
+.negrito {
+    font-weight: bold;
+}
+
+.venda-id,
+.venda-data,
+.venda-hora,
+.venda-cliente,
+.venda-vendedor,
+.venda-total,
+.orcamento-id,
+.orcamento-data,
+.orcamento-hora,
+.orcamento-cliente,
+.orcamento-vendedor,
+.orcamento-total,
+.pedido-em-aberto-id,
+.pedido-em-aberto-data,
+.pedido-em-aberto-hora,
+.pedido-em-aberto-cliente,
+.pedido-em-aberto-vendedor,
+.pedido-em-aberto-total {
+    background-color: #d4d4d4;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 0px;
+}
+
+.venda-id, .orcamento-id, .pedido-em-aberto-id {
+    width: 10%;
+}
+
+.venda-data, .orcamento-data, .pedido-em-aberto-data {
+    width: 15%;
+}
+
+.venda-hora, .orcamento-hora, .pedido-em-aberto-hora {
+    width: 10%;
+}
+
+.venda-cliente, .orcamento-cliente, .pedido-em-aberto-cliente {
+    width: 25%;
+}
+
+.venda-vendedor, .orcamento-vendedor, .pedido-em-aberto-vendedor {
+    width: 25%;
+}
+
+.venda-total, .orcamento-total, .pedido-em-aberto-total {
+    width: 15%;
+    border-right: 1px solid;
 }
