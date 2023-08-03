@@ -343,13 +343,13 @@
 .venda-id,
 .orcamento-id,
 .pedido-em-aberto-id {
-    width: 10%;
+    width: 13%;
 }
 
 .venda-data,
 .orcamento-data,
 .pedido-em-aberto-data {
-    width: 15%;
+    width: 10%;
 }
 
 .venda-hora,
@@ -378,7 +378,11 @@
 }
 
 .div-botoes-editar-excluir {
-    width: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 5%;
     margin-left: 1%;
     border-bottom: 1px solid;
     padding-bottom: 1px;
@@ -450,7 +454,7 @@
 }
 
 .cliente-id {
-    width: 10%;
+    width: 13%;
 }
 
 .cliente-nome {
@@ -458,15 +462,15 @@
 }
 
 .cliente-cpf {
-    width: 15%;
+    width: 12%;
 }
 
 .cliente-telefone {
-    width: 21%;
+    width: 13%;
 }
 
 .cliente-endereco {
-    width: 25%;
+    width: 31%;
     border-right: 1px solid;
 }
 
@@ -489,23 +493,23 @@
 }
 
 .estoque-id {
-    width: 10%;
+    width: 13%;
 }
 
 .estoque-descricao {
-    width: 55%;
+    width: 59%;
 }
 
 .estoque-qtd {
-    width: 10%;
+    width: 5%;
 }
 
 .estoque-und {
-    width: 6%;
+    width: 5%;
 }
 
 .estoque-preco {
-    width: 15%;
+    width: 12%;
     border-right: 1px solid;
 }
 
@@ -527,28 +531,41 @@
 }
 
 .contas-a-pagar-descricao {
-    width: 50%;
+    width: 62%;
 }
 
 .contas-a-pagar-valor {
-    width: 15%;
+    width: 12%;
 }
 
 .contas-a-pagar-vencimento {
-    width: 15%;
+    width: 10%;
 }
 
 .contas-a-pagar-pago {
-    width: 15%;
+    width: 10%;
     border-right: 1px solid;
 }
 
 /* -------------------- css contas a pagar - cadastrar nova conta -------------------- */
+.nova-conta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .secao-contas-a-pagar {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 150px;
+    background-color: #5f5f5f50;
+    border-radius: 5px;
+    width: 700px;
+    padding: 50px;
+}
+
+.secao-contas-a-pagar h1 {
+    margin-bottom: 30px;
 }
 
 .div-contas-a-pagar {
