@@ -70,69 +70,31 @@
     </header>
 
     <main class="main-contas-a-pagar">
-        <ul class="cabecalho-contas-a-pagar">
-            <li>
-                <a href="./cadastrarNovaConta.html">
-                    <img src="../../IMAGENS/iconeContasAPagar.png" alt="icone de conta a pagar">
+        <section class="secao-contas-a-pagar">
+            <div class="div-contas-a-pagar">
+                <label for="descricao">Descrição:</label>
+                <input type="text" name="descricao" id="descricao">
+            </div>
 
-                    Cadastrar Nova Conta
-                </a>
-            </li>
+            <div class="div-contas-a-pagar">
+                <label for="valor">Valor R$:</label>
+                <input type="number" name="valor" id="valor">
+            </div>
 
-            <li id="impressora-li">
-                <button>
-                    <img class="icones-vendas" src="../../IMAGENS/iconeImpressora.png" alt="icone de impressora">
-                </button>
-            </li>
-        </ul>
+            <div class="div-contas-a-pagar">
+                <label for="vencimento">Vencimento:</label>
+                <input type="date" name="vencimento" id="vencimento">
+            </div>
 
-        <section class="secao-home">
-            <h1>Contas a Pagar</h1>
+            <div class="div-contas-a-pagar">
+                <label for="pagamento">Pago em:</label>
+                <input type="date" name="pagamento" id="pagamento">
+            </div>
 
-            <div class="div-secao-home">
-                <ul>
-                    <li>
-                        <p class="contas-a-pagar-descricao negrito">Descrição</p>
+            <div class="div-botoes-contas-a-pagar">
+            <input type="button" value="Salvar" class="btn-salvar-conta">
 
-                        <p class="contas-a-pagar-valor negrito">Valor</p>
-
-                        <p class="contas-a-pagar-vencimento negrito">Vencimento</p>
-
-                        <p class="contas-a-pagar-pago negrito">Pago em</p>
-                    </li>
-
-                    <li>
-                        <p class="contas-a-pagar-descricao">Imposto X</p>
-
-                        <p class="contas-a-pagar-valor">R$ 10.000,00</p>
-
-                        <p class="contas-a-pagar-vencimento">10/08/2023</p>
-
-                        <p class="contas-a-pagar-pago">05/08/2023</p>
-
-                        <div class="div-botoes-editar-excluir">
-                            <button class="botao-editar">Editar</button>
-
-                            <button class="botao-excluir">Excluir</button>
-                        </div>
-                    </li>
-
-                    <li>
-                        <p class="contas-a-pagar-descricao">Pagamento do Fornecedor Y</p>
-
-                        <p class="contas-a-pagar-valor">R$ 2.349,99</p>
-
-                        <p class="contas-a-pagar-vencimento">20/08/2023</p>
-
-                        <p class="contas-a-pagar-pago"></p>
-
-                        <div class="div-botoes-editar-excluir">
-                            <button class="botao-editar">Editar</button>
-
-                            <button class="botao-excluir">Excluir</button>
-                        </div>
-                    </li>
-                </ul>
+            <input type="button" value="Cancelar" class="btn-cancelar-conta">
             </div>
         </section>
     </main>

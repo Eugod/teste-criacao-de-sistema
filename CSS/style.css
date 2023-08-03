@@ -201,7 +201,11 @@
 }
 
 /* -------------------- css vendas -------------------- */
-.main-home, .main-nova-venda, .main-clientes, .main-estoque, .main-contas-a-pagar {
+.main-home,
+.main-nova-venda,
+.main-clientes,
+.main-estoque,
+.main-contas-a-pagar {
     width: calc(100vw - 220px);
     margin-left: 20px;
     padding-right: 20px;
@@ -324,14 +328,16 @@
 .pedido-em-aberto-cliente,
 .pedido-em-aberto-vendedor,
 .pedido-em-aberto-total {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
     background-color: #d4d4d4;
     border-top: 1px solid;
     border-bottom: 1px solid;
     border-left: 1px solid;
-    text-align: center;
     font-size: 1rem;
     margin: 0px;
-    padding: 15px 0px;
+    height: 56px;
 }
 
 .venda-id,
@@ -431,14 +437,16 @@
 .cliente-cpf,
 .cliente-telefone,
 .cliente-endereco {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
     background-color: #d4d4d4;
     border-top: 1px solid;
     border-bottom: 1px solid;
     border-left: 1px solid;
-    text-align: center;
     font-size: 1rem;
     margin: 0px;
-    padding: 15px 0px;
+    height: 56px;
 }
 
 .cliente-id {
@@ -467,15 +475,17 @@
 .estoque-descricao,
 .estoque-qtd,
 .estoque-und,
-.estoque-preco{
+.estoque-preco {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
     background-color: #d4d4d4;
     border-top: 1px solid;
     border-bottom: 1px solid;
     border-left: 1px solid;
-    text-align: center;
     font-size: 1rem;
     margin: 0px;
-    padding: 15px 0px;
+    height: 56px;
 }
 
 .estoque-id {
@@ -502,15 +512,18 @@
 /* -------------------- css contas a pagar -------------------- */
 .contas-a-pagar-descricao,
 .contas-a-pagar-valor,
-.contas-a-pagar-vencimento {
+.contas-a-pagar-vencimento,
+.contas-a-pagar-pago {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
     background-color: #d4d4d4;
     border-top: 1px solid;
     border-bottom: 1px solid;
     border-left: 1px solid;
-    text-align: center;
     font-size: 1rem;
     margin: 0px;
-    padding: 15px 0px;
+    height: 56px;
 }
 
 .contas-a-pagar-descricao {
@@ -523,5 +536,70 @@
 
 .contas-a-pagar-vencimento {
     width: 15%;
+}
+
+.contas-a-pagar-pago {
+    width: 15%;
     border-right: 1px solid;
+}
+
+/* -------------------- css contas a pagar - cadastrar nova conta -------------------- */
+.secao-contas-a-pagar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.div-contas-a-pagar {
+    width: 550px;
+    margin: 15px 0px;
+}
+
+.div-contas-a-pagar input {
+    background-color: var(--cor-terciaria);
+    border-width: 0.1px;
+}
+
+#descricao {
+    width: 400px;
+    margin-left: 16px;
+}
+
+#valor {
+    margin-left: 25px;
+}
+
+#pagamento {
+    margin-left: 22px;
+}
+
+.div-botoes-contas-a-pagar {
+    margin-top: 55px;
+    margin-bottom: 15px;
+}
+
+.btn-salvar-conta,
+.btn-cancelar-conta {
+    background-color: var(--cor-quaternaria);
+    border-width: 0;
+    box-shadow: 3px 3px 5px #000000;
+    font-size: 1.2rem;
+    padding: 5px 25px;
+    border-radius: 2px;
+    transition: 0.1s all;
+}
+
+.btn-salvar-conta {
+    margin-right: 20px;
+}
+
+.btn-cancelar-conta {
+    margin-left: 20px;
+}
+
+.btn-salvar-conta:active,
+.btn-cancelar-conta:active {
+    transform: scale(0.98);
+    background-color: #87c9bc;
 }
