@@ -201,7 +201,7 @@
 }
 
 /* -------------------- css vendas -------------------- */
-.main-home {
+.main-home, .main-nova-venda, .main-clientes, .main-estoque, .main-contas-a-pagar {
     width: calc(100vw - 220px);
     margin-left: 20px;
     padding-right: 20px;
@@ -209,25 +209,37 @@
 
 /* -------------------- css vendas cabeçalho -------------------- */
 .cabecalho-vendas,
-.sub-cabecalho-vendas {
+.sub-cabecalho-vendas,
+.cabecalho-clientes,
+.cabecalho-estoque,
+.cabecalho-contas-a-pagar {
     list-style: none;
     padding: 0px;
 }
 
 .cabecalho-vendas li a,
-.sub-cabecalho-vendas li a {
+.sub-cabecalho-vendas li a,
+.cabecalho-clientes li a,
+.cabecalho-estoque li a,
+.cabecalho-contas-a-pagar li a {
     text-decoration: none;
     color: #000000;
 }
 
-.cabecalho-vendas {
+.cabecalho-vendas,
+.cabecalho-clientes,
+.cabecalho-estoque,
+.cabecalho-contas-a-pagar {
     display: flex;
     align-items: center;
     margin-top: 20px;
     margin-bottom: 30px;
 }
 
-.cabecalho-vendas li {
+.cabecalho-vendas li,
+.cabecalho-clientes li,
+.cabecalho-estoque li,
+.cabecalho-contas-a-pagar li {
     margin-right: 100px;
 }
 
@@ -241,7 +253,10 @@
     border: 0;
 }
 
-.cabecalho-vendas li a {
+.cabecalho-vendas li a,
+.cabecalho-clientes li a,
+.cabecalho-estoque li a,
+.cabecalho-contas-a-pagar li a {
     font-size: 1.2rem;
     font-weight: bold;
 }
@@ -314,31 +329,199 @@
     border-bottom: 1px solid;
     border-left: 1px solid;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin: 0px;
+    padding: 15px 0px;
 }
 
-.venda-id, .orcamento-id, .pedido-em-aberto-id {
+.venda-id,
+.orcamento-id,
+.pedido-em-aberto-id {
     width: 10%;
 }
 
-.venda-data, .orcamento-data, .pedido-em-aberto-data {
+.venda-data,
+.orcamento-data,
+.pedido-em-aberto-data {
     width: 15%;
 }
 
-.venda-hora, .orcamento-hora, .pedido-em-aberto-hora {
+.venda-hora,
+.orcamento-hora,
+.pedido-em-aberto-hora {
+    width: 6%;
+}
+
+.venda-cliente,
+.orcamento-cliente,
+.pedido-em-aberto-cliente {
+    width: 25%;
+}
+
+.venda-vendedor,
+.orcamento-vendedor,
+.pedido-em-aberto-vendedor {
+    width: 25%;
+}
+
+.venda-total,
+.orcamento-total,
+.pedido-em-aberto-total {
+    width: 15%;
+    border-right: 1px solid;
+}
+
+.div-botoes-editar-excluir {
+    width: 3%;
+    margin-left: 1%;
+    border-bottom: 1px solid;
+    padding-bottom: 1px;
+}
+
+.botao-editar,
+.botao-excluir {
+    background-color: #ffffff00;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    transition: 0.1s all;
+}
+
+.botao-editar:hover,
+.botao-excluir:hover {
+    text-decoration: underline;
+}
+
+.botao-editar:active,
+.botao-excluir:active {
+    transform: scale(0.98);
+}
+
+.botao-editar {
+    margin-bottom: 3px;
+}
+
+.botao-editar:hover {
+    color: #008000;
+}
+
+.botao-editar:active {
+    color: #034e03;
+}
+
+.botao-excluir {
+    margin-top: 3px;
+}
+
+.botao-excluir:hover {
+    color: #ff0000;
+}
+
+.botao-excluir:active {
+    color: #a50606;
+}
+
+/* -------------------- css vendas (tela Nova Venda) -------------------- */
+
+
+
+/* -------------------- css clientes -------------------- */
+.cliente-id,
+.cliente-nome,
+.cliente-cpf,
+.cliente-telefone,
+.cliente-endereco {
+    background-color: #d4d4d4;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    text-align: center;
+    font-size: 1rem;
+    margin: 0px;
+    padding: 15px 0px;
+}
+
+.cliente-id {
     width: 10%;
 }
 
-.venda-cliente, .orcamento-cliente, .pedido-em-aberto-cliente {
+.cliente-nome {
     width: 25%;
 }
 
-.venda-vendedor, .orcamento-vendedor, .pedido-em-aberto-vendedor {
-    width: 25%;
+.cliente-cpf {
+    width: 15%;
 }
 
-.venda-total, .orcamento-total, .pedido-em-aberto-total {
+.cliente-telefone {
+    width: 21%;
+}
+
+.cliente-endereco {
+    width: 25%;
+    border-right: 1px solid;
+}
+
+/* -------------------- css estoque -------------------- */
+.estoque-id,
+.estoque-descricao,
+.estoque-qtd,
+.estoque-und,
+.estoque-preco{
+    background-color: #d4d4d4;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    text-align: center;
+    font-size: 1rem;
+    margin: 0px;
+    padding: 15px 0px;
+}
+
+.estoque-id {
+    width: 10%;
+}
+
+.estoque-descricao {
+    width: 55%;
+}
+
+.estoque-qtd {
+    width: 10%;
+}
+
+.estoque-und {
+    width: 6%;
+}
+
+.estoque-preco {
+    width: 15%;
+    border-right: 1px solid;
+}
+
+/* -------------------- css contas a pagar -------------------- */
+.contas-a-pagar-descricao,
+.contas-a-pagar-valor,
+.contas-a-pagar-vencimento {
+    background-color: #d4d4d4;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    text-align: center;
+    font-size: 1rem;
+    margin: 0px;
+    padding: 15px 0px;
+}
+
+.contas-a-pagar-descricao {
+    width: 50%;
+}
+
+.contas-a-pagar-valor {
+    width: 15%;
+}
+
+.contas-a-pagar-vencimento {
     width: 15%;
     border-right: 1px solid;
 }
