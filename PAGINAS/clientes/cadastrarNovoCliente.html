@@ -69,77 +69,34 @@
         </div>
     </header>
 
-    <main class="main-clientes">
-        <ul class="cabecalho-clientes">
-            <li>
-                <a href="./cadastrarNovoCliente.html">
-                    <img src="../../IMAGENS/iconeNovoCliente.png"
-                        alt="icone de novo cliente">
+    <main class="main-clientes novo-cliente">
+        <section class="secao-cliente">
+            <h1>Cliente</h1>
 
-                    Cadastrar Novo Cliente
-                </a>
-            </li>
+            <div class="div-novo-cliente">
+                <label for="nome-cliente">Nome:</label>
+                <input type="text" name="nome-cliente" id="nome-cliente">
+            </div>
 
-            <li id="impressora-li">
-                <button>
-                    <img class="icones-vendas" src="../../IMAGENS/iconeImpressora.png" alt="icone de impressora">
-                </button>
-            </li>
-        </ul>
+            <div class="div-novo-cliente">
+                <label for="cpf">CPF:</label>
+                <input type="text" name="cpf" id="cpf">
+            </div>
 
-        <section class="secao-home">
-            <h1>Clientes</h1>
+            <div class="div-novo-cliente">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" name="telefone" id="telefone">
+            </div>
 
-            <div class="div-secao-home">
-                <ul>
-                    <li>
-                        <p class="cliente-id negrito">ID</p>
+            <div class="div-novo-cliente">
+                <label for="endereco">Endereço:</label>
+                <input type="text" name="endereco" id="endereco">
+            </div>
 
-                        <p class="cliente-nome negrito">Cliente</p>
+            <div class="div-botoes-cliente">
+                <input type="button" value="Salvar" class="btn-salvar-cliente">
 
-                        <p class="cliente-cpf negrito">CPF</p>
-
-                        <p class="cliente-telefone negrito">Telefone</p>
-
-                        <p class="cliente-endereco negrito">Endereço</p>
-                    </li>
-
-                    <li>
-                        <p class="cliente-id">1691156952034</p>
-
-                        <p class="cliente-nome">Renata Gonçalves</p>
-
-                        <p class="cliente-cpf">555.358.458-87</p>
-
-                        <p class="cliente-telefone">(48) 98745-3680</p>
-
-                        <p class="cliente-endereco">Rua das Flores, nº57</p>
-
-                        <div class="div-botoes-editar-excluir">
-                            <button class="botao-editar">Editar</button>
-                            
-                            <button class="botao-excluir">Excluir</button>
-                        </div>
-                    </li>
-
-                    <li>
-                        <p class="cliente-id">1691156928867</p>
-
-                        <p class="cliente-nome">Aderbal Ramos</p>
-
-                        <p class="cliente-cpf">025.588.159-99</p>
-
-                        <p class="cliente-telefone">(51) 96301-4796</p>
-
-                        <p class="cliente-endereco">Rua das Laranjeiras, nº 115</p>
-
-                        <div class="div-botoes-editar-excluir">
-                            <button class="botao-editar">Editar</button>
-                            
-                            <button class="botao-excluir">Excluir</button>
-                        </div>
-                    </li>
-                </ul>
+                <input type="button" value="Cancelar" class="btn-cancelar-cliente">
             </div>
         </section>
     </main>

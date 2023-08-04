@@ -474,6 +474,84 @@
     border-right: 1px solid;
 }
 
+/* -------------------- css clientes - novo cliente -------------------- */
+.novo-cliente {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secao-cliente {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #5f5f5f50;
+    border-radius: 5px;
+    width: 700px;
+    padding: 50px;
+}
+
+.secao-cliente h1 {
+    margin-bottom: 30px;
+}
+
+.div-novo-cliente {
+    width: 667px;
+    margin: 15px 0px;
+}
+
+.div-novo-cliente input {
+    background-color: var(--cor-terciaria);
+    border-width: 0.1px;
+}
+
+#nome-cliente {
+    width: 400px;
+    margin-left: 22px;
+}
+
+#cpf {
+    margin-left: 39px;
+}
+
+#telefone {
+    margin-left: 6px;
+}
+
+#endereco {
+    width: 500px;
+}
+
+.div-botoes-cliente {
+    margin-top: 55px;
+    margin-bottom: 15px;
+}
+
+.btn-salvar-cliente,
+.btn-cancelar-cliente {
+    background-color: var(--cor-quaternaria);
+    border-width: 0;
+    box-shadow: 3px 3px 5px #000000;
+    font-size: 1.2rem;
+    padding: 5px 25px;
+    border-radius: 2px;
+    transition: 0.1s all;
+}
+
+.btn-salvar-cliente {
+    margin-right: 20px;
+}
+
+.btn-cancelar-cliente {
+    margin-left: 20px;
+}
+
+.btn-salvar-cliente:active,
+.btn-cancelar-cliente:active {
+    transform: scale(0.98);
+    background-color: #87c9bc;
+}
+
 /* -------------------- css estoque -------------------- */
 .estoque-id,
 .estoque-descricao,
@@ -512,6 +590,101 @@
     width: 12%;
     border-right: 1px solid;
 }
+
+/* -------------------- css estoque - novo produto -------------------- */
+.novo-produto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secao-produto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #5f5f5f50;
+    border-radius: 5px;
+    width: 700px;
+    padding: 50px;
+}
+
+.secao-produto h1 {
+    margin-bottom: 30px;
+}
+
+.div-novo-produto {
+    width: 667px;
+    margin: 15px 0px;
+}
+
+.div-novo-produto input,
+.div-novo-produto select {
+    background-color: var(--cor-terciaria);
+    border-width: 0.1px;
+}
+
+#descricao-produto {
+    width: 400px;
+    margin-left: 117px;
+}
+
+#categoria {
+    margin-left: 116px;
+}
+
+#und {
+    margin-left: 128px;
+}
+
+#custo {
+    margin-left: 55px;
+    width: 80px;
+}
+
+#preco {
+    margin-left: 52px;
+    width: 80px;
+}
+
+#estoque-atual {
+    width: 60px;
+    margin-left: 87px;
+}
+
+#estoque-minimo {
+    width: 60px;
+}
+
+.div-botoes-produto {
+    margin-top: 55px;
+    margin-bottom: 15px;
+}
+
+.btn-salvar-produto,
+.btn-cancelar-produto {
+    background-color: var(--cor-quaternaria);
+    border-width: 0;
+    box-shadow: 3px 3px 5px #000000;
+    font-size: 1.2rem;
+    padding: 5px 25px;
+    border-radius: 2px;
+    transition: 0.1s all;
+}
+
+.btn-salvar-produto {
+    margin-right: 20px;
+}
+
+.btn-cancelar-produto {
+    margin-left: 20px;
+}
+
+.btn-salvar-produto:active,
+.btn-cancelar-produto:active {
+    transform: scale(0.98);
+    background-color: #87c9bc;
+}
+
 
 /* -------------------- css contas a pagar -------------------- */
 .contas-a-pagar-descricao,

@@ -20,7 +20,7 @@
                 <li>
                     <a href="../vendas/vendas.html">
                         <img class="icones-menu" src="../../IMAGENS/iconeDollar.png" alt="icone de dollar">
-                        
+
                         Vendas
                     </a>
                 </li>
@@ -28,7 +28,7 @@
                 <li>
                     <a href="../clientes/clientes.html">
                         <img class="icones-menu" src="../../IMAGENS/iconePessoa.png" alt="icone de uma pessoa">
-                        
+
                         Clientes
                     </a>
                 </li>
@@ -36,7 +36,7 @@
                 <li id="estoque-li">
                     <a href="" id="estoque-a">
                         <img class="icones-menu" src="../../IMAGENS/iconeCaixa.png" alt="icone de uma caixa">
-                        
+
                         Estoque
                     </a>
                 </li>
@@ -44,15 +44,15 @@
                 <li>
                     <a href="../contasAPagar/contasAPagar.html">
                         <img class="icones-menu" src="../../IMAGENS/iconeDinheiro.png" alt="icone de cedulas">
-                        
+
                         Contas a Pagar
                     </a>
                 </li>
-                
+
                 <li>
                     <a href="../estatisticas/estatisticas.html">
                         <img class="icones-menu" src="../../IMAGENS/iconeEstatisticas.png" alt="icone de estatisticas">
-                        
+
                         Estatísticas
                     </a>
                 </li>
@@ -69,77 +69,63 @@
         </div>
     </header>
 
-    <main class="main-estoque">
-        <ul class="cabecalho-estoque">
-            <li>
-                <a href="./cadastrarNovoProduto.html">
-                    <img src="../../IMAGENS/iconeAddEstoque.png"
-                        alt="icone de novo item no estoque">
+    <main class="main-estoque novo-produto">
+        <section class="secao-produto">
+            <h1>Produto</h1>
 
-                    Cadastrar Novo Produto
-                </a>
-            </li>
+            <div class="div-novo-produto">
+                <label for="descricao-produto">Descrição:</label>
+                <input type="text" name="descricao-produto" id="descricao-produto">
+            </div>
 
-            <li id="impressora-li">
-                <button>
-                    <img class="icones-vendas" src="../../IMAGENS/iconeImpressora.png" alt="icone de impressora">
-                </button>
-            </li>
-        </ul>
+            <div class="div-novo-produto">
+                <label for="categoria">Categoria:</label>
+                <select name="categoria" id="categoria">
+                    <option value="" disabled selected>Selecione uma categoria</option>
+                    <option value="decoracao">Decoração</option>
+                    <option value="ferragens">Ferragens</option>
+                    <option value="ferramentas">Ferramentas</option>
+                    <option value="madeiras">Madeiras</option>
+                    <option value="mdf">MDF</option>
+                    <option value="perfumaria">Perfumaria</option>
+                </select>
+            </div>
 
-        <section class="secao-home">
-            <h1>Estoque</h1>
+            <div class="div-novo-produto">
+                <label for="und">Und Ref:</label>
+                <select name="und" id="und">
+                    <option value="" disabled selected>Selecione uma unidade</option>
+                    <option value="kg">Kg</option>
+                    <option value="mt">Mt</option>
+                    <option value="mt-2">Mt²</option>
+                    <option value="und">Und</option>
+                </select>
+            </div>
 
-            <div class="div-secao-home">
-                <ul>
-                    <li>
-                        <p class="estoque-id negrito">ID</p>
+            <div class="div-novo-produto">
+                <label for="custo">Preço de Custo R$:</label>
+                <input type="number" name="custo" id="custo">
+            </div>
 
-                        <p class="estoque-descricao negrito">Descrição</p>
+            <div class="div-novo-produto">
+                <label for="valor">Preço de Venda R$:</label>
+                <input type="number" name="valor" id="preco">
+            </div>
 
-                        <p class="estoque-qtd negrito">Qtd</p>
+            <div class="div-novo-produto">
+                <label for="estoque-atual">Estoque Atual:</label>
+                <input type="number" name="estoque-atual" id="estoque-atual" value="0">
+            </div>
 
-                        <p class="estoque-und negrito">Und Ref</p>
+            <div class="div-novo-produto">
+                <label for="estoque-minimo">Limite Mínimo de Estoque:</label>
+                <input type="number" name="estoque-minimo" id="estoque-minimo" value="0">
+            </div>
 
-                        <p class="estoque-preco negrito">Preço</p>
-                    </li>
+            <div class="div-botoes-produto">
+                <input type="button" value="Salvar" class="btn-salvar-produto">
 
-                    <li>
-                        <p class="estoque-id">1691156989487</p>
-
-                        <p class="estoque-descricao">Frontal Pinus Tratado</p>
-
-                        <p class="estoque-qtd">5000</p>
-
-                        <p class="estoque-und">Mt²</p>
-
-                        <p class="estoque-preco">R$ 50,00</p>
-
-                        <div class="div-botoes-editar-excluir">
-                            <button class="botao-editar">Editar</button>
-                            
-                            <button class="botao-excluir">Excluir</button>
-                        </div>
-                    </li>
-
-                    <li>
-                        <p class="estoque-id">1691156980714</p>
-
-                        <p class="estoque-descricao">Prego 17X27</p>
-
-                        <p class="estoque-qtd">20</p>
-
-                        <p class="estoque-und">Kg</p>
-
-                        <p class="estoque-preco">R$ 7,50</p>
-
-                        <div class="div-botoes-editar-excluir">
-                            <button class="botao-editar">Editar</button>
-                            
-                            <button class="botao-excluir">Excluir</button>
-                        </div>
-                    </li>
-                </ul>
+                <input type="button" value="Cancelar" class="btn-cancelar-produto">
             </div>
         </section>
     </main>
