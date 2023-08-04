@@ -203,6 +203,7 @@
 /* -------------------- css vendas -------------------- */
 .main-home,
 .main-nova-venda,
+.main-novo-orcamento,
 .main-clientes,
 .main-estoque,
 .main-contas-a-pagar {
@@ -587,6 +588,37 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-left: 10px;
+}
+
+.section-valor-total {
+    margin-top: 20px;
+}
+
+.p-valor-total {
+    font-size: 2rem;
+}
+
+.section-botoes {
+    margin-top: 20px;
+}
+
+.btn-finalizacao {
+    background-color: var(--cor-quaternaria);
+    border-width: 0;
+    box-shadow: 3px 3px 5px #000000;
+    font-size: 1.2rem;
+    padding: 0px 20px;
+    border-radius: 2px;
+    transition: 0.1s all;
+}
+
+.btn-finalizacao:active {
+    transform: scale(0.98);
+    background-color: #87c9bc;
+}
+
+.finalizacao-2, .finalizacao-3 {
+    margin-left: 50px;
 }
 
 /* -------------------- css clientes -------------------- */

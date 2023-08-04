@@ -1,19 +1,19 @@
-const searchBox = document.getElementById('pesquisar-produto');
-const suggestionsContainer = document.getElementById('sugestoes-de-produto');
+const pesquisarProduto = document.getElementById('pesquisar-produto');
+const sugestoesDeProduto = document.getElementById('sugestoes-de-produto');
 
-const items = [
+const produtos = [
     '5 X 10 Angelim - 3mts', 'Frontal de Pinus Tratado', 'Tapajunta de Pinus Comum', '5 X 10 Eucalipto', 'Item 5',
     'Item 6', 'Item 7', 'Item 8', 'Item 9', 'Item 10'
 ];
 
-searchBox.addEventListener('input', () => {
-    const searchTerm = searchBox.value.toLowerCase();
+pesquisarProduto.addEventListener('input', () => {
+    const searchTerm = pesquisarProduto.value.toLowerCase();
 
-    const filteredItems = items.filter(item =>
+    const filteredItems = produtos.filter(item =>
         item.toLowerCase().includes(searchTerm)
     );
 
-    suggestionsContainer.innerHTML = '';
+    sugestoesDeProduto.innerHTML = '';
 
     if (filteredItems.length > 0) {
         filteredItems.forEach(item => {
@@ -22,21 +22,21 @@ searchBox.addEventListener('input', () => {
             suggestionElement.textContent = item;
 
             suggestionElement.addEventListener('click', () => {
-                searchBox.value = item;
-                suggestionsContainer.innerHTML = '';
+                pesquisarProduto.value = item;
+                sugestoesDeProduto.innerHTML = '';
             });
 
-            suggestionsContainer.appendChild(suggestionElement);
+            sugestoesDeProduto.appendChild(suggestionElement);
         });
 
-        suggestionsContainer.style.display = 'block';
+        sugestoesDeProduto.style.display = 'block';
     } else {
-        suggestionsContainer.style.display = 'none';
+        sugestoesDeProduto.style.display = 'none';
     }
 });
 
 document.addEventListener('click', (event) => {
-    if (!searchBox.contains(event.target)) {
-        suggestionsContainer.style.display = 'none';
+    if (!pesquisarProduto.contains(event.target)) {
+        sugestoesDeProduto.style.display = 'none';
     }
 });

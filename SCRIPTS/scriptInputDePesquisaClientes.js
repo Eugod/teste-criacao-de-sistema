@@ -1,19 +1,19 @@
-const searchBox = document.getElementById('pesquisar-cliente');
-const suggestionsContainer = document.getElementById('sugestoes-de-cliente');
+const pesquisarCliente = document.getElementById('pesquisar-cliente');
+const sugestoesDeCliente = document.getElementById('sugestoes-de-cliente');
 
-const items = [
+const clientes = [
     'João da Silva', 'Renato Fonseca', 'Sara Rivas', 'Leando Amburgo', 'Rodrigo Fabiano Araujo',
     'Maria Eduarda Souza e Silva', 'Lucas Santanda Petry', 'Nicole Luz', 'Andressa Rubia dos Santos', 'Natan Alcantara'
 ];
 
-searchBox.addEventListener('input', () => {
-    const searchTerm = searchBox.value.toLowerCase();
+pesquisarCliente.addEventListener('input', () => {
+    const searchTerm = pesquisarCliente.value.toLowerCase();
 
-    const filteredItems = items.filter(item =>
+    const filteredItems = clientes.filter(item =>
         item.toLowerCase().includes(searchTerm)
     );
 
-    suggestionsContainer.innerHTML = '';
+    sugestoesDeCliente.innerHTML = '';
 
     if (filteredItems.length > 0) {
         filteredItems.forEach(item => {
@@ -22,21 +22,21 @@ searchBox.addEventListener('input', () => {
             suggestionElement.textContent = item;
 
             suggestionElement.addEventListener('click', () => {
-                searchBox.value = item;
-                suggestionsContainer.innerHTML = '';
+                pesquisarCliente.value = item;
+                sugestoesDeCliente.innerHTML = '';
             });
 
-            suggestionsContainer.appendChild(suggestionElement);
+            sugestoesDeCliente.appendChild(suggestionElement);
         });
 
-        suggestionsContainer.style.display = 'block';
+        sugestoesDeCliente.style.display = 'block';
     } else {
-        suggestionsContainer.style.display = 'none';
+        sugestoesDeCliente.style.display = 'none';
     }
 });
 
 document.addEventListener('click', (event) => {
-    if (!searchBox.contains(event.target)) {
-        suggestionsContainer.style.display = 'none';
+    if (!pesquisarCliente.contains(event.target)) {
+        sugestoesDeCliente.style.display = 'none';
     }
 });
