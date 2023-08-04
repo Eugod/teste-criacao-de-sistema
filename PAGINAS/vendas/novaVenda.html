@@ -52,7 +52,7 @@
                 <li>
                     <a href="../estatisticas/estatisticas.html">
                         <img class="icones-menu" src="../../IMAGENS/iconeEstatisticas.png" alt="icone de estatisticas">
-                        
+
                         Estatísticas
                     </a>
                 </li>
@@ -70,9 +70,103 @@
     </header>
 
     <main class="main-nova-venda">
-        
+        <section class="section-novo-produto">
+            <div class="div-pesquisar-produto">
+                <input type="text" id="pesquisar-produto" placeholder="Pesquisar produto...">
+                <div id="sugestoes-de-produto"></div>
+            </div>
+
+            <div class="div-informacao-produto">
+                <div class="div-infos">
+                    <label class="label-qtd" for="qtd-produto">Qtd:</label>
+                    <input type="number" name="qtd-produto" id="qtd-produto">
+
+                    <p class="preco-produto">Preço R$: 4.000,00</p>
+
+                    <p class="subtotal-produto">Subtotal R$: 4.000,00</p>
+
+                    <button class="btn-lancar">
+                        <img class="icone-enter" src="../../IMAGENS/iconeEnter.png" alt="icone enter">
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-cliente">
+            <div class="div-pesquisar-cliente">
+                <input type="text" id="pesquisar-cliente" placeholder="Pesquisar cliente...">
+                <div id="sugestoes-de-cliente"></div>
+            </div>
+
+            <div>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn-add-cliente" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <img class="img-add-cliente" src="../../IMAGENS/iconeNovoCliente.png" alt="icone novo cliente">
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Novo Cliente</h1>
+                            </div>
+                            <div class="modal-body">
+                                <div class="div-novo-cliente">
+                                    <label for="nome-cliente">Nome:</label>
+                                    <input type="text" name="nome-cliente" id="nome-cliente">
+                                </div>
+
+                                <div class="div-novo-cliente">
+                                    <label for="cpf">CPF:</label>
+                                    <input type="text" name="cpf" id="cpf">
+                                </div>
+
+                                <div class="div-novo-cliente">
+                                    <label for="telefone">Telefone:</label>
+                                    <input type="tel" name="telefone" id="telefone">
+                                </div>
+
+                                <div class="div-novo-cliente">
+                                    <label for="endereco-modal">Endereço:</label>
+                                    <input type="text" name="endereco-modal" id="endereco-modal">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn btn-primary">Salvar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-observacoes">
+            <label for="obs-entrega">Observações para entrega:</label>
+            <input type="text" name="obs-entrega" id="obs-entrega">
+        </section>
+
+        <section class="section-listagem-produtos">
+            <div class="div-listagem-produtos">
+
+            </div>
+        </section>
+
+        <section class="section-desconto">
+            <label for="input-desconto">Desconto:</label>
+            <select name="selecionar-desconto" id="selecionar-desconto">
+                <option value="" disabled selected></option>
+                <option value="real">R$</option>
+                <option value="porcentagem">%</option>
+            </select>
+            <input type="number" name="input-desconto" id="input-desconto">
+        </section>
     </main>
 
+    <script src="../../SCRIPTS/scriptInputDePesquisaClientes.js"></script>
+    <script src="../../SCRIPTS/scriptInputDePesquisaVendaOrcamento.js"></script>
     <script src="../../SCRIPTS/scriptBtnSair.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
