@@ -582,7 +582,8 @@
     margin-top: 20px;
 }
 
-.section-desconto select, .section-desconto input {
+.section-desconto select,
+.section-desconto input {
     height: 30px;
     background-color: var(--cor-terciaria);
     border: 1px solid #ccc;
@@ -617,7 +618,8 @@
     background-color: #87c9bc;
 }
 
-.finalizacao-2, .finalizacao-3 {
+.finalizacao-2,
+.finalizacao-3 {
     margin-left: 50px;
 }
 
@@ -675,6 +677,12 @@
     border-radius: 5px;
     width: 700px;
     padding: 50px;
+}
+
+.form-cliente {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .secao-cliente h1 {
@@ -796,6 +804,12 @@
     border-radius: 5px;
     width: 700px;
     padding: 50px;
+}
+
+.form-produto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .secao-produto h1 {
@@ -925,6 +939,12 @@
     border-radius: 5px;
     width: 700px;
     padding: 50px;
+}
+
+.form-conta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .secao-contas-a-pagar h1 {
